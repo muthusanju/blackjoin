@@ -1,0 +1,418 @@
+[
+	{
+		"outputs": [
+			{
+				"type": "bool"
+			}
+		],
+		"constant": true,
+		"inputs": [
+			{
+				"type": "uint256"
+			}
+		],
+		"name": "userRefComplete",
+		"stateMutability": "View",
+		"type": "Function"
+	},
+	{
+		"outputs": [
+			{
+				"type": "address"
+			}
+		],
+		"constant": true,
+		"name": "manager",
+		"stateMutability": "View",
+		"type": "Function"
+	},
+	{
+		"outputs": [
+			{
+				"type": "address[]"
+			}
+		],
+		"constant": true,
+		"inputs": [
+			{
+				"name": "_user",
+				"type": "address"
+			}
+		],
+		"name": "viewUserReferral",
+		"stateMutability": "View",
+		"type": "Function"
+	},
+	{
+		"outputs": [
+			{
+				"name": "levelExpired",
+				"type": "uint256[12]"
+			}
+		],
+		"constant": true,
+		"inputs": [
+			{
+				"name": "_user",
+				"type": "address"
+			}
+		],
+		"name": "viewUserLevelExpired",
+		"stateMutability": "View",
+		"type": "Function"
+	},
+	{
+		"outputs": [
+			{
+				"type": "uint256"
+			}
+		],
+		"constant": true,
+		"inputs": [
+			{
+				"type": "uint256"
+			}
+		],
+		"name": "POOL_PRICE",
+		"stateMutability": "View",
+		"type": "Function"
+	},
+	{
+		"outputs": [
+			{
+				"type": "uint256"
+			}
+		],
+		"constant": true,
+		"inputs": [
+			{
+				"type": "uint256"
+			}
+		],
+		"name": "LEVEL_PRICE",
+		"stateMutability": "View",
+		"type": "Function"
+	},
+	{
+		"outputs": [
+			{
+				"type": "uint256"
+			}
+		],
+		"constant": true,
+		"inputs": [
+			{
+				"type": "address"
+			}
+		],
+		"name": "profitStat",
+		"stateMutability": "View",
+		"type": "Function"
+	},
+	{
+		"outputs": [
+			{
+				"type": "address"
+			}
+		],
+		"constant": true,
+		"name": "owner",
+		"stateMutability": "View",
+		"type": "Function"
+	},
+	{
+		"outputs": [
+			{
+				"type": "uint256"
+			}
+		],
+		"constant": true,
+		"inputs": [
+			{
+				"name": "pid",
+				"type": "uint256"
+			}
+		],
+		"name": "currentslot",
+		"stateMutability": "View",
+		"type": "Function"
+	},
+	{
+		"outputs": [
+			{
+				"type": "address"
+			}
+		],
+		"constant": true,
+		"name": "ownerWallet",
+		"stateMutability": "View",
+		"type": "Function"
+	},
+	{
+		"outputs": [
+			{
+				"type": "address"
+			}
+		],
+		"constant": true,
+		"inputs": [
+			{
+				"type": "uint256"
+			}
+		],
+		"name": "userList",
+		"stateMutability": "View",
+		"type": "Function"
+	},
+	{
+		"outputs": [
+			{
+				"type": "uint256"
+			}
+		],
+		"constant": true,
+		"name": "currUserID",
+		"stateMutability": "View",
+		"type": "Function"
+	},
+	{
+		"outputs": [
+			{
+				"name": "isExist",
+				"type": "bool"
+			},
+			{
+				"name": "id",
+				"type": "uint256"
+			},
+			{
+				"name": "referrerID",
+				"type": "uint256"
+			}
+		],
+		"constant": true,
+		"inputs": [
+			{
+				"type": "address"
+			}
+		],
+		"name": "users",
+		"stateMutability": "View",
+		"type": "Function"
+	},
+	{
+		"outputs": [
+			{
+				"type": "uint256"
+			}
+		],
+		"constant": true,
+		"name": "findFirstFreeReferrer",
+		"stateMutability": "View",
+		"type": "Function"
+	},
+	{
+		"outputs": [
+			{
+				"type": "uint256"
+			}
+		],
+		"constant": true,
+		"name": "currCC",
+		"stateMutability": "View",
+		"type": "Function"
+	},
+	{
+		"outputs": [
+			{
+				"type": "uint256"
+			}
+		],
+		"constant": true,
+		"inputs": [
+			{
+				"type": "uint256"
+			}
+		],
+		"name": "levelStat",
+		"stateMutability": "View",
+		"type": "Function"
+	},
+	{
+		"payable": true,
+		"inputs": [
+			{
+				"name": "_referrer",
+				"type": "address"
+			}
+		],
+		"name": "signupUser",
+		"stateMutability": "Payable",
+		"type": "Function"
+	},
+	{
+		"outputs": [
+			{
+				"type": "address[]"
+			}
+		],
+		"constant": true,
+		"inputs": [
+			{
+				"name": "pid",
+				"type": "uint256"
+			}
+		],
+		"name": "getsnap",
+		"stateMutability": "View",
+		"type": "Function"
+	},
+	{
+		"outputs": [
+			{
+				"type": "address"
+			}
+		],
+		"constant": true,
+		"name": "sendAddressPool",
+		"stateMutability": "View",
+		"type": "Function"
+	},
+	{
+		"inputs": [
+			{
+				"name": "newOwner",
+				"type": "address"
+			}
+		],
+		"name": "transferOwnership",
+		"stateMutability": "Nonpayable",
+		"type": "Function"
+	},
+	{
+		"payable": true,
+		"inputs": [
+			{
+				"name": "_level",
+				"type": "uint256"
+			}
+		],
+		"name": "buyLevel",
+		"stateMutability": "Payable",
+		"type": "Function"
+	},
+	{
+		"outputs": [
+			{
+				"type": "address[]"
+			}
+		],
+		"constant": true,
+		"inputs": [
+			{
+				"name": "pid",
+				"type": "uint256"
+			}
+		],
+		"name": "getslot",
+		"stateMutability": "View",
+		"type": "Function"
+	},
+	{
+		"inputs": [
+			{
+				"name": "_manager",
+				"type": "address"
+			}
+		],
+		"stateMutability": "Nonpayable",
+		"type": "Constructor"
+	},
+	{
+		"inputs": [
+			{
+				"indexed": true,
+				"name": "user",
+				"type": "address"
+			},
+			{
+				"indexed": true,
+				"name": "referrer",
+				"type": "address"
+			},
+			{
+				"name": "_time",
+				"type": "uint256"
+			}
+		],
+		"name": "signUpLevelEvent",
+		"type": "Event"
+	},
+	{
+		"inputs": [
+			{
+				"indexed": true,
+				"name": "user",
+				"type": "address"
+			},
+			{
+				"name": "level",
+				"type": "uint256"
+			},
+			{
+				"name": "_time",
+				"type": "uint256"
+			}
+		],
+		"name": "buyNextLevelEvent",
+		"type": "Event"
+	},
+	{
+		"inputs": [
+			{
+				"indexed": true,
+				"name": "user",
+				"type": "address"
+			},
+			{
+				"indexed": true,
+				"name": "referral",
+				"type": "address"
+			},
+			{
+				"name": "level",
+				"type": "uint256"
+			},
+			{
+				"name": "time",
+				"type": "uint256"
+			}
+		],
+		"name": "getMoneyForLevelEvent",
+		"type": "Event"
+	},
+	{
+		"inputs": [
+			{
+				"indexed": true,
+				"name": "user",
+				"type": "address"
+			},
+			{
+				"indexed": true,
+				"name": "referral",
+				"type": "address"
+			},
+			{
+				"name": "level",
+				"type": "uint256"
+			},
+			{
+				"name": "time",
+				"type": "uint256"
+			}
+		],
+		"name": "lostMoneyForLevelEvent",
+		"type": "Event"
+	}
+]
